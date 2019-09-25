@@ -1,29 +1,62 @@
-div {
+.container {
   background-color: rebeccapurple;
-  margin: 12px;
-  padding: 20px;
   color: white;
   font-family: sans-serif;
   letter-spacing: 1.25;
   font-size: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.light {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+}
+.light-cable {
+  width: 4px;
+  height: 45px;
+  left: 50%;
+  top: 0px;
+  background-color: black;
+}
+
+.light-base {
+  background-color: hotpink;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 45px;
+  transform: translateX(-50%);
+
   border-radius: 4px;
 }
 
-input,
-button {
-  padding: 8px 12px;
-  font-family: sans-serif;
-  letter-spacing: 1.25;
-  font-size: 20px;
-  border: none;
-  border-radius: 4px;
+.light-shade {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+
+  border-radius: 50px 50px 0 0;
+  border: 50px solid aqua;
+  border-bottom: none;
 }
 
-button {
-  border: 2px solid white;
-  background-color: rebeccapurple;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2;
-  padding: 10px 12px 8px 12px;
+.light-bulb {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+
+  border-radius: 0 0 20px 20px;
+  border: 20px solid white;
+  border-top: none;
+  opacity: 0.4;
 }
