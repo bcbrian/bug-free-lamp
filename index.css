@@ -60,3 +60,49 @@
   border-top: none;
   opacity: 0.4;
 }
+
+.light-pull-string {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: calc(50% + 40px);
+  top: 100px;
+  transform: translateX(-50%);
+}
+
+.light-string {
+  width: 4px;
+  height: 100px;
+  position: absolute;
+  left: calc(50%);
+  top: 0px;
+  transform: translateX(-50%);
+  background-color: black;
+}
+
+.light-pull {
+  width: 8px;
+  height: 32px;
+  position: absolute;
+  left: calc(50%);
+  top: 100px;
+  transform: translateX(-50%);
+
+  background-color: hotpink;
+}
+
+.container.on .light-bulb {
+  background-color: yellow;
+  opacity: 1;
+}
+
+.container.on .light-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: radial-gradient(circle at 50% 120px, yellow, rebeccapurple);
+  background-blend-mode: soft-light;
+  background-color: rebeccapurple;
+}
