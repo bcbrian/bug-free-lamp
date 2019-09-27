@@ -106,3 +106,61 @@
   background-blend-mode: soft-light;
   background-color: rebeccapurple;
 }
+
+.bug-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes moving-bug {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  10% {
+    transform: translate(50%, 90%);
+  }
+  20% {
+    transform: translate(100%, 170%);
+  }
+  30% {
+    transform: translate(150%, 100%);
+  }
+  40% {
+    transform: translate(200%, -60%);
+  }
+  50% {
+    transform: translate(250%, -60%);
+  }
+  60% {
+    transform: translate(200%, -150%);
+  }
+  70% {
+    transform: translate(150%, -40%);
+  }
+  80% {
+    transform: translate(100%, 50%);
+  }
+  90% {
+    transform: translate(50%, 25%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.bug {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: url(/img/green-beetle.png) top center / 40px 40px;
+  top: 20%;
+  left: 20%;
+  animation: moving-bug 5s infinite;
+  transition: all 5s ease 0.5s;
+}
+
+.container.on .bug {
+  top: 80%;
+  left: 10%;
+}
